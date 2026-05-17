@@ -10,6 +10,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RFM - Rohan Fried Momos</title>
+
+  <link rel="icon" type="image/jpeg" href="logo.jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
 
     *{
@@ -21,7 +33,7 @@
     }
 
     body{
-      background:#fff8f3;
+      background:#ecfdf5;
       color:#222;
       overflow-x:hidden;
     }
@@ -53,7 +65,7 @@
     }
 
     .logo h2{
-      color:#c40012;
+      color:#7c3aed;
       font-size:34px;
       font-weight:800;
     }
@@ -72,14 +84,14 @@
     }
 
     nav ul li a:hover{
-      color:#c40012;
+      color:#16a34a;
     }
 
     .btn{
       padding:13px 30px;
       border:none;
       border-radius:40px;
-      background:#c40012;
+      background:#16a34a;
       color:white;
       font-weight:600;
       cursor:pointer;
@@ -88,7 +100,7 @@
     }
 
     .btn:hover{
-      background:#8b000d;
+      background:#15803d;
       transform:translateY(-3px);
     }
 
@@ -115,7 +127,7 @@
     }
 
     .hero-text h1 span{
-      color:#c40012;
+      color:#7c3aed;
     }
 
     .hero-text p{
@@ -135,9 +147,9 @@
     .outline-btn{
       padding:13px 30px;
       border-radius:40px;
-      border:2px solid #c40012;
+      border:2px solid #7c3aed;
       background:transparent;
-      color:#c40012;
+      color:#7c3aed;
       font-weight:600;
       cursor:pointer;
       transition:0.3s;
@@ -145,7 +157,7 @@
     }
 
     .outline-btn:hover{
-      background:#c40012;
+      background:#7c3aed;
       color:white;
     }
 
@@ -176,7 +188,7 @@
 
     .section-title h2{
       font-size:50px;
-      color:#c40012;
+      color:#16a34a;
       margin-bottom:12px;
     }
 
@@ -216,7 +228,7 @@
 
     .card-content h3{
       font-size:28px;
-      color:#c40012;
+      color:#7c3aed;
       margin-bottom:12px;
     }
 
@@ -262,7 +274,7 @@
 
     .about-text h2{
       font-size:52px;
-      color:#c40012;
+      color:#16a34a;
       margin-bottom:20px;
     }
 
@@ -274,7 +286,7 @@
     }
 
     .contact-box{
-      background:#c40012;
+      background:#7c3aed;
       color:white;
       text-align:center;
       padding:80px 30px;
@@ -334,7 +346,7 @@
       background:none;
       font-size:28px;
       cursor:pointer;
-      color:#c40012;
+      color:#16a34a;
     }
 
     @keyframes popup{
@@ -373,6 +385,296 @@
     }
 
   </style>
+</head>
+
+<body>
+
+  <nav>
+
+    <div class="logo">
+      <img src="logo.jpeg" alt="RFM Logo">
+      <h2>RFM</h2>
+    </div>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+
+      <li>
+        <a href="javascript:void(0);" onclick="openMenuPopup()">
+          Menu
+        </a>
+      </li>
+
+      <li><a href="#about-section">About</a></li>
+
+      <li><a href="#contact-section">Contact</a></li>
+    </ul>
+
+    <a href="https://forms.gle/tXxe6JmkZTjjhXGz6" target="_blank">
+      <button class="btn">Order Now</button>
+    </a>
+
+  </nav>
+
+  <section class="hero" id="home">
+
+    <div class="hero-text">
+
+      <h1>
+        Crispy & Delicious <span>Fried Momos</span>
+      </h1>
+
+      <p>
+        Welcome to RFM – Rohan Fried Momos.
+        We serve hot, crispy, cheesy and spicy momos with unforgettable taste.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="https://forms.gle/tXxe6JmkZTjjhXGz6" target="_blank">
+          <button class="btn">Order Now</button>
+        </a>
+
+        <button class="outline-btn" onclick="openShopPopup()">
+          Visit Shop
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="hero-image">
+      <img src="logo.jpeg" alt="RFM Logo">
+    </div>
+
+  </section>
+
+  <!-- MENU SECTION -->
+
+  <section class="section">
+
+    <div class="section-title">
+      <h2>Our Best Selling Momos</h2>
+      <p>Freshly prepared with authentic flavours</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <img src="fried-momos.webp" alt="Classic Fried Momos">
+
+        <div class="card-content">
+
+          <h3>Classic Fried Momos</h3>
+
+          <p>
+            Crispy golden fried momos served with spicy red chutney.
+          </p>
+
+          <div class="price">₹80</div>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="800px-steamed-veg-momos.webp" alt="Steamed Momos">
+
+        <div class="card-content">
+
+          <h3>Steamed Momos</h3>
+
+          <p>
+            Soft and juicy steamed momos served with spicy chutney.
+          </p>
+
+          <div class="price">₹70</div>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="tandoori-vegetable-momos.webp" alt="Tandoori Momos">
+
+        <div class="card-content">
+
+          <h3>Tandoori Momos</h3>
+
+          <p>
+            Smoky tandoori flavour with creamy mayo.
+          </p>
+
+          <div class="price">₹120</div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section class="section" id="about-section">
+
+    <div class="about">
+
+      <div class="about-image">
+        <img src="logo.jpeg" alt="RFM Logo">
+      </div>
+
+      <div class="about-text">
+
+        <h2>About Rohan</h2>
+
+        <p>
+          Rohan is passionate about cooking and creating delicious food experiences.
+          His speciality is making crispy and flavorful momos loved by everyone.
+        </p>
+
+        <p>
+          Customers love Rohan’s cooking because of the rich taste,
+          quality and hygiene he maintains in every order.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section class="section" id="contact-section">
+
+    <div class="contact-box">
+
+      <h2>Contact & Support</h2>
+
+      <p>
+        Hot • Crispy • Spicy • Delicious
+      </p>
+
+      <div style="margin-top:25px; font-size:20px; line-height:2;">
+
+        📞 Contact Number: 9457508711 <br>
+
+        📧 Gmail Support:
+        priyanshusurya164@gmail.com
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 RFM - Rohan Fried Momos | Designed with ❤️
+  </footer>
+
+  <!-- MENU POPUP -->
+
+  <div id="menuPopup">
+
+    <div class="popup-box">
+
+      <button class="close-btn" onclick="closeMenuPopup()">
+        &times;
+      </button>
+
+      <h2 style="color:#16a34a; text-align:center; margin-bottom:30px; font-size:40px;">
+        Our Momos Menu
+      </h2>
+
+      <div style="display:grid; gap:20px;">
+
+        <div style="padding:20px; border-radius:18px; background:#f0fdf4;">
+          <h3>🥟 Classic Fried Momos</h3>
+          <p>Hot and crispy fried momos.</p>
+          <strong>₹80</strong>
+        </div>
+
+        <div style="padding:20px; border-radius:18px; background:#f0fdf4;">
+          <h3>♨️ Steamed Momos</h3>
+          <p>Soft and juicy steamed momos served with spicy chutney.</p>
+          <strong>₹70</strong>
+        </div>
+
+        <div style="padding:20px; border-radius:18px; background:#f0fdf4;">
+          <h3>🔥 Tandoori Momos</h3>
+          <p>Smoky tandoori flavour.</p>
+          <strong>₹120</strong>
+        </div>
+
+        <div style="padding:20px; border-radius:18px; background:#f0fdf4;">
+          <h3>🧀 Cheese Burst Momos</h3>
+          <p>Loaded with melting cheese.</p>
+          <strong>₹150</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- SHOP POPUP -->
+
+  <div id="shopPopup">
+
+    <div class="popup-box">
+
+      <button class="close-btn" onclick="closeShopPopup()">
+        &times;
+      </button>
+
+      <h2 style="color:#16a34a; text-align:center; margin-bottom:25px;">
+        Rohan Fried Momos
+      </h2>
+
+      <p style="font-size:20px; line-height:2; text-align:center;">
+
+        📍 Kiratpur Road <br>
+
+        PIN: 246733 <br>
+
+        District: Bijnor <br>
+
+        Uttar Pradesh
+
+      </p>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    function openMenuPopup(){
+      document.getElementById('menuPopup').style.display='flex';
+    }
+
+    function closeMenuPopup(){
+      document.getElementById('menuPopup').style.display='none';
+    }
+
+    function openShopPopup(){
+      document.getElementById('shopPopup').style.display='flex';
+    }
+
+    function closeShopPopup(){
+      document.getElementById('shopPopup').style.display='none';
+    }
+
+  </script>
+
+</body>
+</html>
 </head>
 
 <body>
@@ -568,10 +870,10 @@
 
       <div style="margin-top:25px; font-size:20px; line-height:2;">
 
-        📞 Contact Number: 6396651249 <br>
+        📞 Contact Number: 9457508711 <br>
 
         📧 Gmail Support:
-        rohanvanchaaliya@gmail.com
+        priyanshusurya164@gmail.com
 
       </div>
 
