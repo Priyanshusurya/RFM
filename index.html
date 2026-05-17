@@ -377,6 +377,8 @@
 
 <body>
 
+  <!-- NAVBAR -->
+
   <nav>
 
     <div class="logo">
@@ -403,6 +405,8 @@
     </a>
 
   </nav>
+
+  <!-- HERO -->
 
   <section class="hero" id="home">
 
@@ -436,6 +440,230 @@
     </div>
 
   </section>
+
+  <!-- MENU SECTION -->
+
+  <section class="section">
+
+    <div class="section-title">
+      <h2>Our Best Selling Momos</h2>
+      <p>Freshly prepared with authentic flavours</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <img src="fried-momos.webp" alt="Classic Fried Momos">
+
+        <div class="card-content">
+
+          <h3>Classic Fried Momos</h3>
+
+          <p>
+            Crispy golden fried momos served with spicy red chutney.
+          </p>
+
+          <div class="price">₹80</div>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="800px-steamed-veg-momos.webp" alt="Steamed Momos">
+
+        <div class="card-content">
+
+          <h3>Steamed Momos</h3>
+
+          <p>
+            Soft and juicy steamed momos served with spicy chutney.
+          </p>
+
+          <div class="price">₹70</div>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="tandoori-vegetable-momos.webp" alt="Tandoori Momos">
+
+        <div class="card-content">
+
+          <h3>Tandoori Momos</h3>
+
+          <p>
+            Smoky tandoori flavour with creamy mayo.
+          </p>
+
+          <div class="price">₹120</div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section class="section" id="about-section">
+
+    <div class="about">
+
+      <div class="about-image">
+        <img src="logo.jpeg" alt="RFM Logo">
+      </div>
+
+      <div class="about-text">
+
+        <h2>About Rohan</h2>
+
+        <p>
+          Rohan is passionate about cooking and creating delicious food experiences.
+          His speciality is making crispy and flavorful momos loved by everyone.
+        </p>
+
+        <p>
+          Customers love Rohan’s cooking because of the rich taste,
+          quality and hygiene he maintains in every order.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section class="section" id="contact-section">
+
+    <div class="contact-box">
+
+      <h2>Contact & Support</h2>
+
+      <p>
+        Hot • Crispy • Spicy • Delicious
+      </p>
+
+      <div style="margin-top:25px; font-size:20px; line-height:2;">
+
+        📞 Contact Number: 9457508711 <br>
+
+        📧 Gmail Support:
+        priyanshusurya164@gmail.com
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 RFM - Rohan Fried Momos | Designed with ❤️
+  </footer>
+
+  <!-- MENU POPUP -->
+
+  <div id="menuPopup">
+
+    <div class="popup-box">
+
+      <button class="close-btn" onclick="closeMenuPopup()">
+        &times;
+      </button>
+
+      <h2 style="color:#16a34a; text-align:center; margin-bottom:30px; font-size:40px;">
+        Our Momos Menu
+      </h2>
+
+      <div style="display:grid; gap:20px;">
+
+        <div style="padding:20px; border-radius:18px; background:#f0fdf4;">
+          <h3>🥟 Classic Fried Momos</h3>
+          <p>Hot and crispy fried momos.</p>
+          <strong>₹80</strong>
+        </div>
+
+        <div style="padding:20px; border-radius:18px; background:#f0fdf4;">
+          <h3>♨️ Steamed Momos</h3>
+          <p>Soft and juicy steamed momos served with spicy chutney.</p>
+          <strong>₹70</strong>
+        </div>
+
+        <div style="padding:20px; border-radius:18px; background:#f0fdf4;">
+          <h3>🔥 Tandoori Momos</h3>
+          <p>Smoky tandoori flavour.</p>
+          <strong>₹120</strong>
+        </div>
+
+        <div style="padding:20px; border-radius:18px; background:#f0fdf4;">
+          <h3>🧀 Cheese Burst Momos</h3>
+          <p>Loaded with melting cheese.</p>
+          <strong>₹150</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- SHOP POPUP -->
+
+  <div id="shopPopup">
+
+    <div class="popup-box">
+
+      <button class="close-btn" onclick="closeShopPopup()">
+        &times;
+      </button>
+
+      <h2 style="color:#16a34a; text-align:center; margin-bottom:25px;">
+        Rohan Fried Momos
+      </h2>
+
+      <p style="font-size:20px; line-height:2; text-align:center;">
+
+        📍 Kiratpur Road <br>
+
+        PIN: 246733 <br>
+
+        District: Bijnor <br>
+
+        Uttar Pradesh
+
+      </p>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    function openMenuPopup(){
+      document.getElementById('menuPopup').style.display='flex';
+    }
+
+    function closeMenuPopup(){
+      document.getElementById('menuPopup').style.display='none';
+    }
+
+    function openShopPopup(){
+      document.getElementById('shopPopup').style.display='flex';
+    }
+
+    function closeShopPopup(){
+      document.getElementById('shopPopup').style.display='none';
+    }
+
+  </script>
 
 </body>
 </html>
